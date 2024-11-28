@@ -1,0 +1,154 @@
+/* Estilo Geral */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Fundo claro */
+  color: #333; /* Texto escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%; /* Garante que o body ocupe toda a largura */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #ffd700; /* Amarelo */
+  width: 100%; /* Garantir que ocupe toda a largura */
+  padding: 20px 0; /* Remover padding lateral */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 500;
+  color: white;
+}
+
+/* Container */
+.container {
+  background-color: #fff; /* Fundo branco para o formulário */
+  padding: 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para profundidade */
+  text-align: center;
+}
+
+/* Formulário de Busca */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1em;
+}
+
+.form-group input::placeholder {
+  color: #aaa;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ffd700; /* Foco no amarelo */
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+input[type="submit"],
+.btn-back-consulta {
+  text-decoration: none;
+  color: black;
+  background-color: #ffd700; /* Amarelo */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover,
+.btn-back-consulta:hover {
+  background-color: #0056b3; /* Azul escuro */
+  transform: scale(1.05); /* Efeito hover */
+}
+
+/* Tabela de Resultados */
+.registro-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.registro-tabela th,
+.registro-tabela td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.registro-tabela th {
+  background-color: #ffd700; /* Amarelo */
+  color: white;
+}
+
+.registro-tabela tr:nth-child(even) {
+  background-color: #f9f9f9; /* Linha alternada */
+}
+
+/* Mensagens de Resultado */
+.result-message {
+  margin: 20px 0;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.success {
+  color: green;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.error {
+  color: red;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.result-message p {
+  margin: 10px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .form-group input {
+    font-size: 0.9em; /* Ajuste para telas pequenas */
+  }
+
+  .registro-tabela {
+    font-size: 0.9em; /* Ajuste da tabela */
+  }
+}

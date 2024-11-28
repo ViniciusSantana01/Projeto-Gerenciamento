@@ -1,0 +1,44 @@
+<!--
+  UMC 
+  Vinicius Santana, Paulo Ricardo, Juma Siqueira, Matheus Anry e Rafael Kercio
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de OS</title>
+    <link rel="stylesheet" href="../CSS/consulta.css">
+</head>
+<body>
+    <header>
+        <h1>Verificação de Registro de OS</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Formulário de busca por Cliente ou CPF -->
+        <form method="post" action="consOsReg.jsp">
+            <label for="cliente">Digite o nome do Cliente ou CPF:</label>
+            <div class="form-group">
+                <input type="text" id="cliente" name="cliente" placeholder="Nome ou CPF do Cliente" required>
+            </div>
+            <div class="form-actions">
+                <input type="submit" value="Consultar!">
+                <!-- Botão 'Voltar' estilizado -->
+                <a href="../index.html" class="btn-back-consulta">Voltar</a>
+            </div>
+        </form>
+
+        <h2>Ou consulte todos os registros cadastrados:</h2>
+        <!-- Formulário para mostrar todos os registros -->
+        <form method="get" action="consOsReg.jsp">
+            <input type="hidden" name="mostrarTodos" value="true">
+            <input type="submit" value="Mostrar Todos os Registros">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
