@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alterar - OS</title>
+  <link rel="stylesheet" href="../CSS/alterar.css"> <!-- CSS específico para essa página -->
+</head>
+<body>
+  <header>
+    <h1>Alteração de OS - Consulta</h1>
+  </header>
+
+  <div class="content-container">
+    <p class="description">Para realizar a alteração de uma Ordem de Serviço (OS), por favor, insira o CPF ou Nome do Cliente abaixo.</p>
+
+    <!-- Formulário para consulta do cliente -->
+    <form method="post" action="consAltOs.jsp" class="form-consulta">
+      <label for="cliente">Cliente (CPF ou Nome):</label>
+      <input type="text" name="cliente" id="cliente" placeholder="Digite o CPF ou Nome do Cliente" required>
+      <button type="submit" class="btn-consultar">Consultar</button>
+    </form>
+
+    <div class="link-back">
+      <a href="../index.html" class="btn-voltar">Voltar</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 ACXS - Assistência Técnica de Eletrônicos</p>
+  </footer>
+</body>
+</html>
